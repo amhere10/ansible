@@ -1,6 +1,6 @@
 - name: Variables in ansible
   hosts: localhost
-  Vars:
+  vars:
     Course: "Devops"
     Trainer: "Sivakumar"
     Duration: "90 days"
