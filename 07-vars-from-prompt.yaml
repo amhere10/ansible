@@ -7,7 +7,7 @@
      - name: Password
        prompt: Please provide the Password?
        private: false
-  task:
+  tasks:
     - name: Get the information from user through Prompt screen.
       ansible.builtin.debug:
        msg: "Username is : {{Username}} and Password is : {{Password}}"
