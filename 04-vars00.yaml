@@ -1,10 +1,10 @@
 - name: Variables in ansible
   hosts: localhost
   vars:
-    Course: "Devops"
-    Trainer: "Sivakumar"
-    Duration: "90 days"
+    Course: "Devops with AWS"
+    Trainer: "Sivakumar & Pavan Kumar"
+    Duration: "4 months"
   tasks:
     - name: Printing the lines with Vairables.
       ansible.builtin.debug:
-        msg: "I am practicing {{Course}} with the help of {{Trainer}} from last {{Duration}}"
+        msg: "I am practicing {{Course}} with the help of {{Trainer}}, Duration is {{Duration}}"
