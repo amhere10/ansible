@@ -3,6 +3,6 @@
   tasks:
     - name: From var file
       vars:
-      timings: "07:15AM IST"
+       timings: "07:15AM IST"
       ansible.builtin.debug:
-       msg: "I am learning {{Course}} with the help of {{Trainer}} max duration of {{Duration}} at {{timings}}"
+       msg: "I am learning {{Course}} with the help of {{Trainer}} max duration of {{Duration}} Timings are: {{timings}}"
