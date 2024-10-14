@@ -1,0 +1,8 @@
+- name: Getting the variable values from Var file.
+  hosts: localhost
+  vars_files:
+    - vars.yaml 
+  tasks:
+   - name: Printing the values through Var file.
+     ansible.builtin.debug:
+      msg: "I am learning {{Course}} with the help of {{Trainer}} max duration of {{Duration}}"
