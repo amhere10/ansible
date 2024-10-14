@@ -1,0 +1,17 @@
+- name: Validating the preferences of the variables between Task and Play Level.
+  hosts: localhost
+  vars: 
+    Course: "Docker"
+    Trainer: "Siva"
+    Duration: "4 months"
+  tasks:
+   - name: Task Level
+     vars:
+      Course: "DevOps"
+      Trainer: "Siva & Pavan"
+     ansible.builtin.debug:
+      msg: "I am learning {{Course}} & AWS with the help of {{Trainer}} max duration of {{Duration}}"
+
+   - name: Play Level
+     ansible.builtin.debug:
+      msg: "I am learning {{Course}} & AWS with the help of {{Trainer}} max duration of {{Duration}}"
