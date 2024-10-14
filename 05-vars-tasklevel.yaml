@@ -7,10 +7,10 @@
   tasks:
    - name: Task Level
      vars:
-      Course: "DevOps"
+      Course: "DevOps & AWS"
       Trainer: "Siva & Pavan"
      ansible.builtin.debug:
-      msg: "I am learning {{Course}} & AWS with the help of {{Trainer}} max duration of {{Duration}}"
+      msg: "I am learning {{Course}} with the help of {{Trainer}} max duration of {{Duration}}"
 
    - name: Play Level
      ansible.builtin.debug:
