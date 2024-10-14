@@ -1,0 +1,6 @@
+- name: Variables in ansible
+  hosts: localhost
+  tasks:
+    - name: Printing the lines with Vairables.
+      ansible.builtin.debug:
+        msg: "I am practicing the DevOps with the help of Sivakumar from last 90 days"
