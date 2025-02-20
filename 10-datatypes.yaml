@@ -1,0 +1,17 @@
+- names: datatypes in ansible
+  hosts: localhost
+  vars:
+   Course: DevOps with AWS
+   Tools:
+    - Linux
+    - Shell
+    - Ansible
+   Experience:
+    - Devops: 2.5
+    - Docker: 1
+    - Teraform: 1
+  Realtime: true
+  tasks:
+   - name: print datatypes
+     ansible.builtin.debug:
+      msg: "My Course is: {{Course}}, Tools used are : {{Tools}}, comes to Experience : {{Experience}} and I involved in a Realtime project : {{Realtime}} "
