@@ -1,4 +1,4 @@
-- name: datatypes in ansible
+- name: data types in ansible
   hosts: localhost
   vars:
    Course: DevOps with AWS
